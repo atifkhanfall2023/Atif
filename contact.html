@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
 </head>
+
 <body>
-           <h3>CONTACT INFORMATION</h3>
-           <p>Welcome to my contact page </p>
-             <ul>
-                 <li>  EMail: 22pwbcs0906@uetpeshawar.edu.pk</li>
-                 <li>Whatsapp : 03449092577</li>
-                 <li> GITHUB :<a href="https://github.com/atifkhanfall2023/WP_Fall_2023">github account</a></li>
-               
-                    <p> <B>Subject</B>: Collaboration Inquiry
 
-                        Hello,
-                        
-                        I'm Muhammad Atif Khan, a game and Java developer. I'm interested in collaborating on projects. Let's connect and explore possibilities.
-                        
-                        Best regards,
-                        Muhammad Atif Khan</p>
+    <header>
+        <!-- Navigation menu -->
+    </header>
 
-             </ul>
+    <main>
+        <h1>Contact Us</h1>
+
+        <!-- Contact Form -->
+        <form action="send_email.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="6" cols="30" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <!-- Social media icons and copyright notice -->
+    </footer>
+
+    <script src="script.js"></script> <!-- Include your JavaScript file -->
 </body>
+
 </html>
