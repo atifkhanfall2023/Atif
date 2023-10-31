@@ -1,0 +1,17 @@
+#contact{
+    display: flex;
+   
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+
+  }
+  #contact input{
+      margin-bottom: 30px;
+      padding: 20px;
+  }
+  #b{
+      margin-left: 500px;
+  }
