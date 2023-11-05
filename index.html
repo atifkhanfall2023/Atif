@@ -1,428 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Cafe De Peshawar</title>
-    <link rel="stylesheet" href="style11.css">
-    <style>
-        .gray-heading {
-            background-color: rgb(163, 163, 51);
-        }
-    </style>
-    <style>
-        .red-btn {
-            background-color: #e0ff33;
-            border-color: #FF5733;
-            color:black; /* Optionally, set text color to white for better visibility */
-        }
-    </style>
-    <style>
-        .custom-section {
-            background-color: #dbc8c8;
-            padding: 50px;
-            border-radius: 10px;
-            box-shadow: 5px 5px 30px rgba(0.1, 0.1, 0.1, 0.1); /* Increased spread radius to 20px */
-        } 
-    </style>
-    <style>
-                /* Custom CSS */
-        /* Add your custom CSS styles here */
-        .carousel-item img {
-            max-height: 400px;
-            object-fit: cover;
-        }
-
-        .featured-story,
-        .recent-posts {
-            padding: 40px 0;
-        }
-
-        .post {
-            margin-bottom: 40px;
-        }
-    </style>
-        <style>
-            .about-section {
-                background-color: #f9f9f9; /* Set a background color */
-                padding: 50px; /* Add some padding for spacing */
-                border-radius: 10px; /* Add rounded corners */
-                box-shadow: 0px 0px 20px rgba(76, 50, 245, 0.5); /* Add a subtle shadow for depth */
-            }
-        
-            .about-section h2 {
-                color: #333; /* Set heading color */
-            }
-        
-            .about-section p {
-                color: black; /* Set paragraph color */
-            }
-        </style>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, sans-serif;
-            }
-    
-            .footer {
-                background-color: black;
-                color: #fff;
-                text-align: center;
-                padding: 20px;
-                
-                width: 100%;
-                bottom: 0;
-                left: 0;
-            }
-    
-            .footer p {
-                margin-bottom: 5px;
-            }
-    
-            .contact-info {
-                font-size: 14px;
-                color: #ccc;
-            }
-    
-            .social-icons a {
-                text-decoration: none;
-                color: #ccc;
-                font-size: 20px;
-                margin: 0 10px;
-            }
-        </style>
+    <title>Atif Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation bar -->
-    <style>
-        .navbar-toggler {
-            border-color: #ffffff; /* Change the border color */
-        }
+    <div class="container">
+        <div class="book-list">
+            <h2>Book List</h2><div id="a"> 
+                <form action="https://www.google.com/search">Search :
+                     <input type="search" placeholder="search for more books" id="action" name="q"     aria-rowcount="3"><button> Search</button></div>
+            </form>
     
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-            /* Replace the icon with a custom one or change the color */
-        }
-    </style>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(112, 71, 17);">
-        <div class="container">
-            <!-- Logo and Brand name -->
-            <a class="navbar-brand" href="#">
-                <img src="" alt="">
-                <span style="font-weight: bold; color: yellow; font-size: 30px; transition-delay:  1s; font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><h1>Cafe De Peshawar</h1></span> 
-            </a>
-            <!-- Toggler button for mobile view -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navigation links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about"><span style="border: 5px;"></span> About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                
-                </ul>
-            </div>
+               
+            
+            <ul id="book-list">
+                <!-- Populate book list dynamically using JavaScript -->
+            </ul>
         </div>
-    </nav>
-
-    <!-- Content Section - Welcome -->
-    <section class="container my-5">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="banner3.jfif" class="d-block w-100" alt="...">
+        <div class="add-book">
+            <h2>Add New Books</h2>
+            <form id="add-book-form">
+                <div class="input-group">
+                    <label for="title"> Book Title:</label>
+                    <input type="text" placeholder="Text" id="title" required>
                 </div>
-                <div class="carousel-item">
-                    <img src="aa.jpg" class="d-block w-100" alt="...">
+                <div class="input-group">
+                    <label for="author">Author Name:</label>
+                    <input type="text" placeholder="Author" id="author" required>
                 </div>
-                <div class="carousel-item">
-                    <img src="aaa.webp" class="d-block w-100" alt="...">
+                <div class="input-group">
+                    <label for="isbn">ISBN NUMBER:</label>
+                    <input type="text" placeholder="ISBN" id="isbn" required>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+                <button type="submit">Add Book </button>
+            </form>
         </div>
-    </section>
-
-
-    <section class="featured-story">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                  
-                    <h1 style="background-color:yellow; text-align: center; height: 100px; width: 700px; padding-top: 30px;margin-left: 300px;">Welcome to Cafe De Peshawar</h1>
-    <div id="b">                 <img   src="images.jpg" alt=""></div>
-                    <p>Explore The Cafe.</p>
-
-                    <a href="/stories.html" class="btn btn-primary">Explore More</a>
-                </div>
-            </div>
-            <!-- Additional content or elements can be added here -->
-            <div class="row mt-4">
-                <div class="col-md-12">
-                    <h2>Discover Amazing Deals</h2>
-                    <p>Find the best deals on a wide range of products. From electronics to fashion, we've got it all covered. Explore our curated collection and treat yourself to some exciting shopping experiences.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-
-    <style>
-        /* Custom CSS */
-        .recent-posts {
-            padding: 40px 0;
-        }
-
-        .post {
-            position: relative;
-            overflow: hidden;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            margin-bottom: 30px;
-        }
-
-        .post:hover {
-            transform: scale(1.05);
-        }
-
-        .post-image img {
-            width: 100%;
-            height: 200px; /* Adjust the height as needed */
-            object-fit: cover;
-            transition: all 0.3s ease;
-        }
-
-        .post-image:hover img {
-            transform: scale(1.1);
-        }
-
-        .post-content {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .btn-primary {
-            margin-top: 15px;
-        }
-    </style>
-
-<section class="container my-5 custom-section">
-    <div class="row" id="menuItems">
-    </div>
-</section>
-
-<script>
-    // Sample data for menu items
-    const menuItems = [
-        {
-            title: 'Dessert Menu',
-            items: [
-                { name: 'Chocolate Cake', price: '$6.99' },
-                { name: 'Cheesecake', price: '$7.99' },
-                { name: 'Tiramisu', price: '$8.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-        {
-            title: 'Beverage Menu',
-            items: [
-                { name: 'Cappuccino', price: '$4.99' },
-                { name: 'Iced Tea', price: '$3.99' },
-                { name: 'Smoothie', price: '$5.99' }
-            ]
-        },
-    ];
-
-
-    
-
-    const menuItemsContainer = document.getElementById('menuItems');
-
-    // Loop through the menu items and create cards for each item
-    menuItems.forEach((menu, index) => {
-        const menuItem = `
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h2 class="card-title gray-heading">${menu.title}</h2>
-                        <ul class="menu-list">
-                            ${menu.items
-                                .map(
-                                    item => `
-                                        <li>
-                                            <span class="item-name">${item.name}</span>
-                                            <span class="item-price">${item.price}</span>
-                                        </li>
-                                    `
-                                )
-                                .join('')}
-                        </ul>
-                        <button class="order-btn red-btn" data-menu="menu-${index + 1}">Order</button>
-                    </div>
-                </div>
-            </div>
-        `;
-        menuItemsContainer.insertAdjacentHTML('beforeend', menuItem);
-    });
-</script>
-
-
- <!-- Content Section - About Us -->
- <section class="container my-5 about-section" id="about">
-    <div class="row">
-        <div class="col-md-6">
-            <h2>About Us</h2>
-            <p>Welcome to Peshawar De Cafe, where every cup tells a story. Our journey began with a simple idea: to create a space where tradition and innovation coexist harmoniously. Steeped in the rich cultural heritage of Peshawar, we aim to provide not just a café, but an experience.</p>
-            <p>Our mission is to serve more than just coffee. We're here to serve a slice of history, a taste of tradition, and a sip of genuine hospitality. From our meticulously brewed beverages to our curated menu of local delicacies, every offering is a tribute to the vibrant tapestry of this city.</p>
-            <p>Step into Peshawar De Cafe, and you'll find more than just a place to indulge your taste buds. You'll find a piece of Peshawar's heart.</p>
-        </div>
-        <div class="col-md-6">
-            <img src="9.jpg" alt="Peshawar De Cafe" class="side-image" with="400" height="350">
+        <div class="search-books">
+            <h2>Search Books Here</h2>
+            <form action="https://www.google.com/search">Search :
+                <input type="search" placeholder="search for more books" id="action" name="q"     aria-rowcount="3"><button> Search</button></div>
+            </form>
         </div>
     </div>
-</section>
-
-<section id="contact">
-    <h1 class="heading">Please Enter Your valuable Feedoback And You can Also contact With US!</h1>
-    <form action="/action">
-        <input type="text" name="username" class="input" placeholder="user name">
-        <input type="email" name="email" class="input" placeholder="enter email">
-<textarea name="msg" id="msg" cols="30" rows="10" placeholder="enter your feedback"></textarea>
-<input type="submit" value="SEND" id="send">
-    </form>
-</section>
-<!-- Contact Form -->
-<!-- Footer -->
-<div class="footer" id="contact">
-    <p>Contact Us</p>
-    <div class="contact-info">
-        <p>Email: 22pwbcs0906@uetpeshawar.edu.pk</p>
-        <p>Phone: (92) 3449092577</p>
-        <p>Address: Near UET, Peshawar, Pakistan</p>
-    </div>
-    <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <!-- Add more social icons as needed -->
-        
-    </div>
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function showAlert() {
-            alert("Thank you for your purchase! Enjoy your meal.");
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
